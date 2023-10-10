@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b32eb0a1ca9f94a4bb76b52be5f52c33, type: 3}
+  m_Name: Figuras
+  m_EditorClassIdentifier: 
+  circlePrefab: {fileID: 463769664762901576, guid: d1ce3d0e141a3b2419173ddd6b6b898b,
+    type: 3}
+  squarePrefab: {fileID: 316282242670752961, guid: a606dc6701e29a14c998845ce5454895,
+    type: 3}
+  tiangulePrefab: {fileID: 521834265952737779, guid: 76689f6ef67ece140ab6097db1dc622d,
+    type: 3}
+  blueColor: {r: 0, g: 0, b: 1, a: 1}
+  redColor: {r: 1, g: 0, b: 0, a: 1}
+  greenColor: {r: 0, g: 1, b: 0, a: 1}
