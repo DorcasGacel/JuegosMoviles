@@ -20,23 +20,23 @@ public class InitScene : MonoBehaviour
     {
       
     }
-
+    public string numTag;
     private void HandleSceneLoaded()
     {
         if (!sceneLoaded)
         {
-            //SceneGlobalManager.Instance.PlayScene("LoadScene");
-            DisableUnwantedObjects();
+            DisableUnwantedObjects(numTag);
             sceneLoaded = true;
         }
     }
-    void DisableUnwantedObjects()
+    void DisableUnwantedObjects(string numero)
     {
-        GameObject[] objectsToDisable = GameObject.FindGameObjectsWithTag("1"); // Etiqueta de objetos no deseados 
+        GameObject[] objectsToDisable = GameObject.FindGameObjectsWithTag(numero); // Etiqueta de objetos no deseados 
         foreach (var obj in objectsToDisable)
         {
             obj.SetActive(false);
         }
+      
     }
 
 }

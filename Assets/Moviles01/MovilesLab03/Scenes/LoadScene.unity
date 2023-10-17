@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 19278528}
   - component: {fileID: 19278529}
   - component: {fileID: 19278530}
+  - component: {fileID: 19278531}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: Untagged
@@ -183,6 +184,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 640eecdf6f6462a4b8667d7293d5a23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numTag: 1
+--- !u!114 &19278531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19278527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1baf3772ea65a5243a75a8ed39d739fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numTag: 2
+  canvasGame: {fileID: 0}
+  camera: {fileID: 0}
+  AudioManager: {fileID: 0}
 --- !u!1 &133927960
 GameObject:
   m_ObjectHideFlags: 0

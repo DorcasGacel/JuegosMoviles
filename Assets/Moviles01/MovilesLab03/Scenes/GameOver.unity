@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 1105112166}
   m_Layer: 0
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -670,7 +670,7 @@ GameObject:
   - component: {fileID: 1634023004}
   m_Layer: 0
   m_Name: GameController
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -716,7 +716,7 @@ GameObject:
   - component: {fileID: 1729563622}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: MainCamera
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -879,7 +879,7 @@ GameObject:
   - component: {fileID: 2010093487}
   m_Layer: 0
   m_Name: GameManagerScore
-  m_TagString: Untagged
+  m_TagString: 2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
