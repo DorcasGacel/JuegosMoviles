@@ -18,15 +18,24 @@ public class InitScene : MonoBehaviour
 
     void Start()
     {
-        // No cargues la escena aquí.
+      
     }
 
     private void HandleSceneLoaded()
     {
         if (!sceneLoaded)
         {
-            SceneGlobalManager.Instance.PlayScene("LoadScene");
+            //SceneGlobalManager.Instance.PlayScene("LoadScene");
+            DisableUnwantedObjects();
             sceneLoaded = true;
+        }
+    }
+    void DisableUnwantedObjects()
+    {
+        GameObject[] objectsToDisable = GameObject.FindGameObjectsWithTag("1"); // Etiqueta de objetos no deseados 
+        foreach (var obj in objectsToDisable)
+        {
+            obj.SetActive(false);
         }
     }
 

@@ -39,7 +39,7 @@ public class SceneGlobalManager : MonoBehaviour
 
     private void Start()
     {
-        LoadSceneAsync();
+        LoadSceneAsync(); // loadScene
     }
     void Update()
     {
@@ -50,9 +50,8 @@ public class SceneGlobalManager : MonoBehaviour
         targetLoad = 0;
         progressBar.fillAmount = 0;
 
-        var scene = SceneManager.LoadSceneAsync(sceneToLoad);
+        var scene = SceneManager.LoadSceneAsync(sceneToLoad, LoadSceneMode.Additive); //aquiiiiiiii
         scene.allowSceneActivation = false;
-
         do
         {
             await Task.Delay(3000); //100
@@ -74,4 +73,5 @@ public class SceneGlobalManager : MonoBehaviour
     {
         SceneManager.UnloadSceneAsync(sceneName);
     }
+
 }
