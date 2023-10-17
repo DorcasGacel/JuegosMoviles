@@ -74,6 +74,7 @@ public class MenuSeleccionPersonaje : MonoBehaviour
         ChangeScreen();
     }
 
+    //SCENES
     public void IniciarJuego()
     {
          SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
