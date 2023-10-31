@@ -13,6 +13,7 @@ public class PlayerController : ScriptableObject
     public int life;
     public int PlayerVelocity = 0;
     public int score = 0;
+    public int coins = 0;
     public int price = 0;
 
 }
