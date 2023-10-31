@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 850eeb691ad9b6a43ba9b78fef98f773, type: 3}
+  m_Script: {fileID: 11500000, guid: e159c1cb58f469c49add6e885d883982, type: 3}
   m_Name: Character1
   m_EditorClassIdentifier: 
-  characterPref: {fileID: 4082478139316083232, guid: b35d274c59918954e9d95be8f19ea8ec,
+  characterPref: {fileID: 4082478139316083232, guid: d560b500c1c8f9144ac7e1097cb5c929,
     type: 3}
   image: {fileID: -728063206, guid: 3c199a10504755648be53950b06ad2d6, type: 3}
   name: Kitty
-  life: 3
+  life: 4
   PlayerVelocity: 0
   score: 0
+  price: 0

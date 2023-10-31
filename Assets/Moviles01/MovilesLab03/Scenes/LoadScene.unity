@@ -169,9 +169,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11241881c4569c54fbb9164bb348947d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  progressBar: {fileID: 1977996279}
-  loadingText: {fileID: 1249139751}
-  sceneToLoad: SpaceMenu
 --- !u!114 &19278530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +181,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 640eecdf6f6462a4b8667d7293d5a23a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numTag: 1
 --- !u!114 &19278531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -194,13 +190,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 19278527}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1baf3772ea65a5243a75a8ed39d739fa, type: 3}
+  m_Script: {fileID: 11500000, guid: 30e8b6aeb036c104b8a5cb68f5e906fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numTag: 2
-  canvasGame: {fileID: 0}
-  camera: {fileID: 0}
-  AudioManager: {fileID: 0}
+  progressBar: {fileID: 1977996279}
+  loadingText: {fileID: 1249139751}
+  sceneToLoad: SpaceMenu
 --- !u!1 &133927960
 GameObject:
   m_ObjectHideFlags: 0
@@ -464,11 +459,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Catita   Peaches
+  m_text: Catita        Peaches
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e8e105ce4c4c94845819254e294a6b2b, type: 2}
-  m_sharedMaterial: {fileID: -8304716508662791668, guid: e8e105ce4c4c94845819254e294a6b2b,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

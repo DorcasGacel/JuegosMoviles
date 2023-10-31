@@ -95,11 +95,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 25269363770116678}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd13d2655db4c8f4eb1486d68a42131f, type: 3}
+  m_Script: {fileID: 11500000, guid: 290d4ae8b288f5f498302939acf7957b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadVertical: 2
-  playerC: {fileID: 11400000, guid: c5df4c24cc042a64dbcfe88c8cc981ed, type: 2}
+  velocidadVertical: 4
+  playerC: {fileID: 11400000, guid: 93b6761ec8cdce44b8d7350c4b88aa96, type: 2}
   distanciaMaxima: 10
 --- !u!58 &6586928879613638010
 CircleCollider2D:
