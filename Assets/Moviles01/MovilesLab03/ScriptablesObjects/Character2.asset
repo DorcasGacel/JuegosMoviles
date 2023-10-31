@@ -19,4 +19,4 @@ MonoBehaviour:
   life: 5
   PlayerVelocity: 0
   score: 0
-  price: 0
+  price: 20

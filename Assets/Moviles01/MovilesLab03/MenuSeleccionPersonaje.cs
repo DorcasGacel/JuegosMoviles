@@ -12,6 +12,7 @@ public class MenuSeleccionPersonaje : MonoBehaviour
     [SerializeField] private Image _image;
 
     [SerializeField] private TextMeshProUGUI name;
+    [SerializeField] private TextMeshProUGUI price;
 
     private GameManager GameManager;
 
@@ -45,7 +46,8 @@ public class MenuSeleccionPersonaje : MonoBehaviour
        PlayerPrefs.SetInt("JugadorIndex", index);
         _image.sprite = GameManager.characters[index].image;
         name.text = GameManager.characters[index].name;
-   }
+        price.text = GameManager.characters[index].price.ToString();
+    }
 
     public void NextPersonaje()
     {
