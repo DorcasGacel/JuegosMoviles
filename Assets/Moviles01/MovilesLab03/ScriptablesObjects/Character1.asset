@@ -16,7 +16,8 @@ MonoBehaviour:
     type: 3}
   image: {fileID: -728063206, guid: 3c199a10504755648be53950b06ad2d6, type: 3}
   name: Kitty
-  life: 4
+  life: 5
   PlayerVelocity: 0
-  score: 0
-  price: 0
+  score: 9
+  coins: 12
+  price: 10

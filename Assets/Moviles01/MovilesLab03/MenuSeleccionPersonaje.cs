@@ -13,18 +13,24 @@ public class MenuSeleccionPersonaje : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI name;
     [SerializeField] private TextMeshProUGUI price;
+    [SerializeField] private TextMeshProUGUI totalCoins;
+
+    [SerializeField] private GameObject candado;
 
     private GameManager GameManager;
 
     public GameObject selectionPanel;
 
-   // public AnimatorController animator;
+    public int playerCoins; // La cantidad de monedas del jugador
+
+    // public AnimatorController animator;
 
     void Start()
     {
         //animator = GetComponent<AnimatorController>();
         //Invoke("LoopAnimation", 2.0f);
-
+       
+        candado.SetActive(true);
         Time.timeScale = 0f;
         GameManager = GameManager.Instance;
 
@@ -36,17 +42,31 @@ public class MenuSeleccionPersonaje : MonoBehaviour
         }
 
         ChangeScreen();
+
+        GameManager.characters[0].coins = GameManager.characters[index].coins;
+        GameManager.characters[1].coins = GameManager.characters[index].coins;
+        GameManager.characters[2].coins = GameManager.characters[index].coins;
     }
     /*private void LoopAnimation()
     {
         animator.ReproducirAnimacion();
     }*/
-    private void ChangeScreen()
+    public void ChangeScreen()
    {
-       PlayerPrefs.SetInt("JugadorIndex", index);
+   //PlayerPrefs.SetInt("JugadorIndex", index);
         _image.sprite = GameManager.characters[index].image;
         name.text = GameManager.characters[index].name;
         price.text = GameManager.characters[index].price.ToString();
+        totalCoins.text = GameManager.characters[index].coins.ToString();
+
+        if (GameManager.characters[index].coins >= GameManager.characters[index].price)
+        {
+            candado.SetActive(false);
+        }
+        else
+        {
+            candado.SetActive(true);
+        }
     }
 
     public void NextPersonaje()
@@ -90,6 +110,32 @@ public class MenuSeleccionPersonaje : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Salí del juego");
+    }
+
+    public void BuyItem(PlayerController item)
+    {
+        if (GameManager.characters[index].coins >= GameManager.characters[index].price)
+        {
+            // El jugador tiene suficientes monedas para comprar el objeto
+            GameManager.characters[index].coins -= item.price;
+
+            // Aquí puedes agregar la lógica para dar al jugador el objeto comprado
+            //GameManager.characters[index]; 
+            PlayerPrefs.SetInt("JugadorIndex", index);
+            //GameManager.characters[index].characterPref;
+            //int n = index;
+            //itemsForSale[n];
+            // si tiene la plata está desbloquada a secas y no hay candado
+            //candado.SetActive(false);
+            ChangeScreen();
+            IniciarJuego();
+        }
+        else if (GameManager.characters[index].coins < GameManager.characters[index].price)
+        {
+            // No hay suficientes monedas para comprar el objeto
+            Debug.Log("No tienes suficientes monedas.");
+            candado.SetActive(true);
+        }
     }
 
 }

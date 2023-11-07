@@ -9,6 +9,8 @@ public class GameController : MonoBehaviour
     private float tiempoEntrePuntos = 1.0f;
     public TMP_Text scoreText;
 
+    public TMP_Text coinText;
+
     public TMP_Text scoreTextGame;
     public TMP_Text LifeText;
     private GameManager GameManager; //********
@@ -31,6 +33,8 @@ public class GameController : MonoBehaviour
         index = PlayerPrefs.GetInt("JugadorIndex");
 
         InvokeRepeating("AddScore", tiempoEntrePuntos, tiempoEntrePuntos);
+
+        InvokeRepeating("AddCoins", 3.0f, 3.0f);
 
         // Recuperar el puntaje guardado en PlayerPrefs
         score = PlayerPrefs.GetInt("Score");
@@ -70,9 +74,15 @@ public class GameController : MonoBehaviour
     private void AddScore()
     {
         GameManager.characters[index].score++;
-
+        
         scoreText.text = "Score : " + GameManager.characters[index].score;
         scoreTextGame.text = "Score : " + GameManager.characters[index].score;
+    }
+    private void AddCoins()
+    {
+        //Coins
+        GameManager.characters[index].coins++;
+        coinText.text = "Coins : " + GameManager.characters[index].coins;
     }
     public void LifeMenos()
     {
